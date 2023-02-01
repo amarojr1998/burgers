@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <title>Welcome to Yum Burger</title>
+        <meta charset="utf-8">
+        <meta name="description" content="burgers">
+        <meta name="keywords" content="food">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="order.css">
+    </head>
+    
+ <body>
+
+    <div class="main">
+        <h1>Place Your Order Here!</h1>
+        <form action="javascript:void(0);">
+            <fieldset>
+                <legend>
+                    <div class="number">1</div> Your Info:
+                </legend>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="user_name"><br>
+                <label for="mail">Email:</label><br>
+                <input type="email" id="mail" name="user_email"><br>
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" name="user_tel"><br>
+                <label for="address">Address:</label><br>
+                <textarea></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <div class="number">2</div> Burger Choice:
+                </legend>
+                <input type="checkbox" id="burger" name="burger" href="#burger"><label>burger</label>
+                <input type="checkbox" id="cheeseburger" name="cheeseburger"><label>Cheeseburger</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <div class="number">3</div> Your Sides:
+                </legend>
+                <input type="checkbox" id="fries" name="side"><label>Fries</label>
+                <input type="checkbox" id="onionrings" name="side"><label>Onion Rings</label><br>
+                <input type="checkbox" id="curlyfries" name="side"><label>Curly Fries</label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <div class="number">4</div> Drinks:
+                </legend>
+                <input type="checkbox" id="Grape Soda" name="Grape Soda"><label>Grape Soda</label><br>
+                <input type="checkbox" id="Lime Soda" name="Lime Soda"><label>Lime Soda</label></br>
+                <input type="checkbox" id="sugar" name="soda"><label>Soda</label></br>
+                <input type="checkbox" id="lemonade" name="lemonade"><label>Lemonade</label></br>
+                <input type="checkbox" id="tea" name="tea"><label>Tea</label></br>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <div class="number">5</div> Any Allergies/Special Requests:
+                </legend>
+                <textarea></textarea>
+            </fieldset>
+            <input class="button" type="submit" value="Give me Food!" onclick="submitForm()">
+        </form>
+    </div>
+    <div class="order">
+        <h1>Thanks for your order!</h1>
+    </div>
+    <script src="order.js"></script>
+ </body>
+</html>
